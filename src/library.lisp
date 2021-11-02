@@ -6,4 +6,4 @@
     (:unix (:or "libSDL2-2.0.so.0" "libSDL2.so.0.2" "libSDL2"))
     (:windows "SDL2.dll")
     (t (:default "libSDL2")))
-  (cffi:use-foreign-library libsdl2))
+  (cffi:load-foreign-library 'libsdl2))
